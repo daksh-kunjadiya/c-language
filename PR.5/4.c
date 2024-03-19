@@ -1,53 +1,59 @@
-#include <stdio.h>
+#include<stdio.h>
 main()
 {
-    int r, c;
-    printf("enter row : ");
-    scanf("%d", &r);
-    printf("enter column : ");
-    scanf("%d", &c);
+    int rows, cols;
+    printf("Enter the array's row size: ");
+    scanf("%d", &rows);
+    printf("Enter the array's column size: ");
+    scanf("%d", &cols);
 
-    int a[r][c];
-    int i, j;
+    int arr[rows][cols];
 
-    for (i = 0; i < r; i++)
+    printf("Enter array's elements:\n");
+    for (int i = 0; i < rows; i++)
     {
-        for (j = 0; j < c; j++)
+        for (int j = 0; j < cols; j++)
         {
-            printf("eneter element :");
-            scanf("%d", &a[i][j]);
+            printf("a[%d][%d] = ", i, j);
+            scanf("%d", &arr[i][j]);
         }
     }
 
-    int row_num, row_sum = 0;
+    printf("\nArray:\n");
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < cols; j++)
+        {
+            printf("%d ", arr[i][j]);
+        }
+        printf("\n");
+    }
+
+    int row_num, col_num;
     printf("\nEnter row number: ");
     scanf("%d", &row_num);
+    int row_sum = 0;
     printf("Elements of row %d: ", row_num);
-
-    for (i = 0; i < r; i++)
+    for (int i = 0; i < cols; i++)
     {
-        printf("%d", a[i][row_num]);
-        row_sum += a[i][row_num];
-        if (i < c - 1)
-        {
-            printf(",");
-        }
+        printf("%d", arr[row_num][i]);
+        row_sum += arr[row_num][i];
+        if (i < cols - 1)
+            printf(", ");
     }
-    printf("\nThe sum of row %d : %d\n", row_num, row_sum);
+    printf("\nThe sum of row %d: %d\n", row_num, row_sum);
 
-    int col_num, col_sum = 0;
     printf("\nEnter column number: ");
     scanf("%d", &col_num);
+    int col_sum = 0;
     printf("Elements of column %d: ", col_num);
-
-    for (j = 0; j < c; j++)
+    for (int i = 0; i < rows; i++)
     {
-        printf("%d", a[col_num][j]);
-        col_sum += a[col_num][j];
-        if (j < r - 1)
-        {
-            printf(",");
-        }
+        printf("%d", arr[i][col_num]);
+        col_sum += arr[i][col_num];
+        if (i < rows - 1)
+            printf(", ");
     }
-    printf("\nThe sum of column %d : %d\n", col_num, col_sum);
+    printf("\nThe sum of column %d: %d\n", col_num, col_sum);
+
 }

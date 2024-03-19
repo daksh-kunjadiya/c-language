@@ -1,27 +1,25 @@
 #include<stdio.h>
 #include<conio.h>
 main()
-	{
-	float base_salary, hra_percentage, da_percentage, ta_percentage;
-	float hra, da, ta, gross_salary;
-	clrscr();
+{
+    float base_salary, HRA, DA, TA, gross_salary;
+    clrscr();
 
-	printf("Enter the base salary: ");
-	scanf("%f", &base_salary);
-	printf("Enter the percentage of HRA: ");
-	scanf("%f", &hra_percentage);
-	printf("Enter the percentage of DA: ");
-	scanf("%f", &da_percentage);
-	printf("Enter the percentage of TA: ");
-	scanf("%f", &ta_percentage);
+    printf("Enter the base salary : ");
+    scanf("%f", &base_salary);
+    printf("Enter the HRA : ");
+    scanf("%f", &HRA);
+    printf("Enter the DA : ");
+    scanf("%f", &DA);
+    printf("Enter the TA : ");
+    scanf("%f", &TA);
 
-	hra = (hra_percentage / 100) * base_salary;
-	da = (da_percentage / 100) * base_salary;
-	ta = (ta_percentage / 100) * base_salary;
+    HRA = (HRA / 100) * base_salary;
+    DA = (DA / 100) * base_salary;
+    TA = (TA / 100) * base_salary;
 
-	gross_salary = base_salary + hra + da + ta;
+    gross_salary = base_salary + HRA + DA + TA;
 
-	printf("Gross Salary: Rs. %.2f\n", gross_salary);
-
-	getch();
+    printf("Gross Salary: Rs. %.2f\n", gross_salary);
+    getch();
 }
