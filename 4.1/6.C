@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 main()
 {
 	int x, y, result;
@@ -13,5 +13,5 @@ main()
 
 	printf("(%d - %d)^2 = %d\n", x, y, result);
 
-    getch();
+	getch();
 }

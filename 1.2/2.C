@@ -1,8 +1,8 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 main()
 {
 	clrscr();
 	printf("--------\n|\t|\nR\t|\nN\t|\nW\t|\n|\t|\n--------");
 	getch();
-	}
+}

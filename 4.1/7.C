@@ -1,6 +1,6 @@
-#include<stdio.h>
-#include<conio.h>
-	main()
+#include <stdio.h>
+#include <conio.h>
+main()
 {
 	int x, y, result;
 	clrscr();

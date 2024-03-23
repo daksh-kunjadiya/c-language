@@ -1,6 +1,7 @@
-#include<stdio.h>
-#include<conio.h>
-main() {
+#include <stdio.h>
+#include <conio.h>
+main()
+{
 	int a, b;
 	clrscr();
 	printf("Enter the first number A: ");

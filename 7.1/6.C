@@ -1,15 +1,14 @@
-//print pattern using nested loop
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 main()
 {
-	int i,j;
+	int i, j;
 	clrscr();
-	for(i=5;i>=1;i--)
+	for (i = 5; i >= 1; i--)
 	{
-		for(j=1;j<=i;j++)
+		for (j = 1; j <= i; j++)
 		{
-			printf("%d",j%2);
+			printf("%d", j % 2);
 		}
 		printf("\n");
 	}

@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 main()
 {
 	int n, first = 0, second = 1, next, i;
@@ -11,10 +11,10 @@ main()
 	do
 	{
 		next = first + second;
-		printf("%d",next);
+		printf("%d", next);
 		first = second;
 		second = next;
 		i++;
-	}while(i<=n);
+	} while (i <= n);
 	getch();
 }

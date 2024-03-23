@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 main()
 {
 	char n;
@@ -12,24 +12,31 @@ main()
 	printf("f.friday\n");
 	printf("d.saturday\n");
 	printf("enter any number:");
-	scanf("%c",&n);
+	scanf("%c", &n);
 
-	switch(n)
+	switch (n)
 	{
-		case 's':printf("sunday");
-			scanf("%c",n);
+	case 's':
+		printf("sunday");
+		scanf("%c", n);
 		break;
-		case 'm':printf("monday");
+	case 'm':
+		printf("monday");
 		break;
-		case 't':printf("tuesday");
+	case 't':
+		printf("tuesday");
 		break;
-		case 'w':printf("wednesday");
+	case 'w':
+		printf("wednesday");
 		break;
-		case 'h':printf("thursday");
+	case 'h':
+		printf("thursday");
 		break;
-		case 'f':printf("friday");
+	case 'f':
+		printf("friday");
 		break;
-		case 'a':printf("saturday");
+	case 'a':
+		printf("saturday");
 		break;
 	}
 	getch();

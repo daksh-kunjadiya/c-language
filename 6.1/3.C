@@ -1,15 +1,14 @@
-//print 1 to n using while loop
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 main()
 {
-	int a=1,n;
+	int a = 1, n;
 	clrscr();
 	printf("enter any number\t:");
-	scanf("%d",&n);
-	while(a<=n)
+	scanf("%d", &n);
+	while (a <= n)
 	{
-		printf("%d\t",a);
+		printf("%d\t", a);
 		a++;
 	}
 	getch();

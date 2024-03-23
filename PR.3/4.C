@@ -1,16 +1,29 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 main()
 {
-	int s=0,n;
+	int n, num, a, sum = 0, mul = 1;
 	clrscr();
-	printf("enter any number:");
-	scanf("%d",&n);
-	while(n>0)
+	printf("Enter anber: ");
+	scanf("%d", &n);
+
+	num = n;
+
+	while (n > 0)
 	{
-		s+=n%10;
-		n/=10;
+		a = n % 10;
+		sum += a;
+		mul *= a;
+		n /= 10;
 	}
-	printf("magic number is\t:%d",s);
+
+	if (sum == mul)
+	{
+		printf("%d is a magic number\n", num);
+	}
+	else
+	{
+		printf("%d is not a magic number\n", num);
+	}
 	getch();
 }

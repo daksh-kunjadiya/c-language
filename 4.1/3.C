@@ -1,8 +1,8 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 main()
 {
-	int a,b,c;
+	int a, b, c;
 	clrscr();
 	printf("Enter value for a: ");
 	scanf("%d", &a);

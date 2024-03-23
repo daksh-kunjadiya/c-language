@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 main()
 {
     float base_salary, HRA, DA, TA, gross_salary;

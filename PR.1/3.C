@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 main()
 {
 	int first_angle, second_angle, third_angle;

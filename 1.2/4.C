@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 main()
 {
 	clrscr();
@@ -7,4 +7,3 @@ main()
 	printf("    *        *\t     *\n*   *\t\t*  *\n*  *\n*");
 	getch();
 }
-

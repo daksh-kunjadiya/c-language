@@ -1,13 +1,12 @@
-//print 1 to 10 using while loop
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 main()
 {
-	int a=1;
+	int a = 1;
 	clrscr();
-	while(a<=10)
+	while (a <= 10)
 	{
-		printf("%d\n",a);
+		printf("%d\n", a);
 		a++;
 	}
 	getch();

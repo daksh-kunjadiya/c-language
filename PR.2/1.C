@@ -1,19 +1,19 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 main()
 {
 	char a;
 	clrscr();
 	printf("enter any value:");
-	scanf("%c",&a);
+	scanf("%c", &a);
 
-	if ((a>='A'&& a<='Z') || (a>='a'&& a <='z'))
+	if ((a >= 'A' && a <= 'Z') || (a >= 'a' && a <= 'z'))
 	{
-		printf("%c the alphabet\n",a);
+		printf("%c the alphabet\n", a);
 	}
-	else if (a>='0'&& a <='9')
+	else if (a >= '0' && a <= '9')
 	{
-		printf("%c the digit\n",a);
+		printf("%c the digit\n", a);
 	}
 	else
 	{

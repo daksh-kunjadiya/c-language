@@ -1,20 +1,19 @@
-//print leap year between two given number using while loop
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 main()
 {
-	int a,b;
+	int a, b;
 	clrscr();
 	printf("enter any number\t:");
-	scanf("%d",&a);
+	scanf("%d", &a);
 	printf("enter any number\t:");
-	scanf("%d",&b);
+	scanf("%d", &b);
 
-	while(a<=b)
+	while (a <= b)
 	{
-	if(a%4==0)
+		if (a % 4 == 0)
 		{
-		printf("%d\t",a);
+			printf("%d\t", a);
 		}
 		a++;
 	}

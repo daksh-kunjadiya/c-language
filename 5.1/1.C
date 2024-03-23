@@ -1,18 +1,18 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 main()
 {
-	int a,b,c;
+	int a, b, c;
 	clrscr();
 
 	printf("Enter number of a: ");
-	scanf("%d",&a);
+	scanf("%d", &a);
 	printf("Enter number of b: ");
-	scanf("%d",&b);
+	scanf("%d", &b);
 
-	if (a<b)
+	if (a < b)
 	{
-	       printf("a is minimum");
+		printf("a is minimum");
 	}
 	else
 	{

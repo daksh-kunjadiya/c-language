@@ -1,17 +1,24 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
+
 main()
 {
-       int f,l,n,sum;
+       int number, a, b, n, sum;
        clrscr();
-       printf("enter any number\t:");
-       scanf("%d",&n);
-       f=n;
-       while(f>=10){
-		f/=10;
+       printf("Enter a number: ");
+       scanf("%d", &number);
+
+       n = number;
+       b = number % 10;
+
+       while (n >= 10)
+       {
+              n /= 10;
        }
-       l=n%10;
-       sum=f+l;
-       printf("sum:%d\n",sum);
+       a = n;
+
+       sum = a + b;
+
+       printf("Sum of first and last digit : %d", sum);
        getch();
 }
