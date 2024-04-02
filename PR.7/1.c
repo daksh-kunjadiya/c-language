@@ -1,88 +1,100 @@
 #include <stdio.h>
 
-int add(int a, int b)
-{
-    return a + b;
-}
-int subtract(int a, int b)
-{
-    return a - b;
-}
-int multiply(int a, int b)
-{
-    return a * b;
-}
-int divide(int a, int b)
-{
-    if (b != 0)
-    {
-        return a / b;
-    }
-    else
-    {
-        printf("Error: Division by zero\n");
-        return 0;
-    }
-}
-int modulus(int a, int b)
-{
-    if (b != 0)
-    {
-        return a % b;
-    }
-    else
-    {
-        printf("Error: Modulus by zero\n");
-        return 0;
-    }
-}
+void performAddition(int n1, int n2);
+void performSubtraction(int n1, int n2);
+void performMultiplication(int n1, int n2);
+void performDivision(int n1, int n2);
+void performPercentage(int n1, int n2);
 
 int main()
 {
-    char choice;
     int n1, n2;
-    while (choice != 0)
+    int choice;
+    do
     {
-        printf("\nPress 1 for +\n");
-        printf("Press 2 for -\n");
-        printf("Press 3 for *\n");
-        printf("Press 4 for /\n");
-        printf("Press 5 for %%\n");
-        printf("Press 0 for the exit\n\n");
-        printf("Enter your choice: ");
-        scanf(" %c", &choice);
+        printf("\n\nPress 1 For Addition (+)\n");
+        printf("Press 2 For Subtract(-)\n");
+        printf("Press 3 For Multiply(*)\n");
+        printf("Press 4 For Division(/)\n");
+        printf("Press 5 For Percent (%%)\n");
+        printf("Press 6 For Exit\n\n");
+        printf("Enter Your Choice... \n");
 
-        if (choice != '0')
+        scanf("%d", &choice);
+
+        switch (choice)
         {
-            printf("Enter the first n2ber: ");
-            scanf("%d", &n1);
-            printf("Enter the second n2ber: ");
-            scanf("%d", &n2);
-
-            switch (choice)
-            {
-            case '1':
-                printf("Addition of %d and %d is %d\n", n1, n2, add(n1, n2));
-                break;
-            case '2':
-                printf("Subtraction of %d and %d is %d\n", n1, n2, subtract(n1, n2));
-                break;
-            case '3':
-                printf("Multiplication of %d and %d is %d\n", n1, n2, multiply(n1, n2));
-                break;
-            case '4':
-                printf("Division of %d and %d is %d\n", n1, n2, divide(n1, n2));
-                break;
-            case '5':
-                printf("Modulus of %d and %d is %d\n", n1, n2, modulus(n1, n2));
-                break;
-            default:
-                printf("Invalid choice\n");
-                break;
-            }
+        case 1:
+            performAddition(n1, n2);
+            break;
+        case 2:
+            performSubtraction(n1, n2);
+            break;
+        case 3:
+            performMultiplication(n1, n2);
+            break;
+        case 4:
+            performDivision(n1, n2);
+            break;
+        case 5:
+            performPercentage(n1, n2);
+            break;
+        case 6:
+            printf("You Are Now Exiting.\n");
+            break;
+        default:
+            printf("Invalid choice. Please try again.\n");
+            break;
         }
-    }
+    } while (choice != 6);
 
-    printf("Exiting program\n");
     return 0;
+}
+
+void performAddition(int n1, int n2)
+{
+    printf("Enter First Number: ");
+    scanf("%d", &n1);
+    printf("Enter Second Number: ");
+    scanf("%d", &n2);
+    printf("Result: %d\n", n1 + n2);
+}
+void performSubtraction(int n1, int n2)
+{
+    printf("Enter First Number: ");
+    scanf("%d", &n1);
+    printf("Enter Second Number: ");
+    scanf("%d", &n2);
+    printf("Result: %d\n", n1 - n2);
+}
+void performMultiplication(int n1, int n2)
+{
+    printf("Enter First Number: ");
+    scanf("%d", &n1);
+    printf("Enter Second Number: ");
+    scanf("%d", &n2);
+    printf("Result: %d\n", n1 * n2);
+}
+void performDivision(int n1, int n2)
+{
+    printf("Enter First Number: ");
+    scanf("%d", &n1);
+    printf("Enter Second Number: ");
+    scanf("%d", &n2);
+    if (n2 != 0)
+    {
+        printf("Result: %d\n", n1 / n2);
+    }
+    else
+    {
+        printf("Error: Division by zero.\n");
+    }
+}
+void performPercentage(int n1, int n2)
+{
+    printf("Enter Total Number: ");
+    scanf("%d", &n1);
+    printf("Enter Percentage: ");
+    scanf("%d", &n2);
+    printf("Result: %d\n", (n1 * n2) / 100);
 }
