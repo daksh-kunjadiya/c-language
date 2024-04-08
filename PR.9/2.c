@@ -9,7 +9,7 @@ struct Student
     int phy_marks;
 };
 
-float calculate_percentage(int total_marks)
+float percentage(int total_marks)
 {
     return (float)(total_marks) / 300 * 100;
 }
@@ -45,7 +45,7 @@ int main()
         printf("Physics => %d\n", s[i].phy_marks);
         int total_marks = s[i].chem_marks + s[i].maths_marks + s[i].phy_marks;
         printf("Total => %d/300\n", total_marks);
-        printf("Percent => %.2f%%\n\n", calculate_percentage(total_marks));
+        printf("Percent => %.2f%%\n\n", percentage(total_marks));
     }
 
     return 0;
