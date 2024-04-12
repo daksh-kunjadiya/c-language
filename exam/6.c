@@ -21,14 +21,13 @@ int main()
         printf("name: ");
         scanf("%s", &m[i].company_name);
         printf("color: ");
-        scanf("%s", m[i].color);
+        scanf("%s", &m[i].color);
         printf("model: ");
         scanf("%d", &m[i].model);
         printf("price: ");
-        scanf("%d", m[i].price);
+        scanf("%d", &m[i].price);
     }
 
-    printf("\nStudent Records:\n");
     for (int i = 0; i < n; i++)
     {
         printf("nanme: %s\n", m[i].company_name);

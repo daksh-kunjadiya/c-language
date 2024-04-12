@@ -14,18 +14,18 @@ int Diviaible(int a)
 
 int main()
 {
-    int number;
+    int num;
 
-    printf("Enter anynumber: ");
-    scanf("%d", &number);
+    printf("Enter any number: ");
+    scanf("%d", &num);
 
-    if (Diviaible(number))
+    if (Diviaible(num))
     {
         printf("The given number is divisible by both 3 & 5.\n");
     }
     else
     {
-        printf("The given numberber is not divisible by both 3 & 5.\n");
+        printf("The given numberber is not divisible by both 3 & 5\n");
     }
 
     return 0;
